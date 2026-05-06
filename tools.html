@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free teaching tools for students by Shishir Bhattarai — handwritten notes, student information form, and more resources.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Tools — Shishir Bhattarai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="subpage">
+  <nav id="navbar">
+    <a href="/" class="nav-logo">Shishir<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/skills.html">Skills</a></li>
+      <li><a href="/qualification.html">Journey</a></li>
+      <li><a href="/tools.html">Teaching Tools</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/portfolio.html">Portfolio</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <nav class="nav-mobile" id="navMobile">
+    <ul>
+      <li><a href="/" class="mobile-link">Home</a></li>
+      <li><a href="/about.html" class="mobile-link">About</a></li>
+      <li><a href="/skills.html" class="mobile-link">Skills</a></li>
+      <li><a href="/qualification.html" class="mobile-link">Journey</a></li>
+      <li><a href="/tools.html" class="mobile-link">Teaching Tools</a></li>
+      <li><a href="/blog.html" class="mobile-link">Blog</a></li>
+      <li><a href="/services.html" class="mobile-link">Services</a></li>
+      <li><a href="/portfolio.html" class="mobile-link">Portfolio</a></li>
+      <li><a href="/notes.html" class="mobile-link">Notes</a></li>
+      <li><a href="/contact.html" class="mobile-link">Contact</a></li>
+    </ul>
+  </nav>
+   
+
+    <section id="tools">
+    <div class="section-inner">
+      <div class="section-label">Teaching Tools</div>
+      <h2 class="section-title">Resources for <em>Students</em></h2>
+      <p class="tools-intro">A growing collection of interactive tools and resources for students. New tools will be
+        added here as they are built — forms, quizzes, guides, and more.</p>
+      <div class="tools-grid">
+
+        <!-- TOOL: Handwritten Notes -->
+        <div class="tool-card reveal" onclick="window.location.href='notes.html'">
+          <div class="tool-card-tag">Notes · Study Resources</div>
+          <div class="tool-card-title">Handwritten Notes Library</div>
+          <div class="tool-card-desc">Access handwritten notes for different subjects and classes. Browse by subject or
+            class level and download PDFs instantly.</div>
+          <button class="tool-card-action">
+            Browse notes
+            <svg class="tool-card-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- TOOL 1: Student Info Form -->
+        <div class="tool-card reveal" onclick="openStudentForm()">
+          <div class="tool-card-tag">Form · Student Data</div>
+          <div class="tool-card-title">Student Information Form</div>
+          <div class="tool-card-desc">Collect student details including name, date of birth, address, hobbies,
+            aspirations, and family background. Download a formatted Word document instantly.</div>
+          <button class="tool-card-action">
+            Open form
+            <svg class="tool-card-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- PLACEHOLDER: Coming soon -->
+        <div class="tool-card tool-card-coming reveal reveal-delay-1">
+          <div class="tool-card-tag">Quiz · Assessment</div>
+          <div class="tool-card-title">Student Quiz Builder</div>
+          <div class="tool-card-desc">Create and share multiple-choice quizzes with your students. Auto-grade and export
+            results.</div>
+          <button class="tool-card-action" disabled style="opacity:0.4;cursor:default">
+            Coming soon
+          </button>
+        </div>
+
+        <!-- PLACEHOLDER: Coming soon -->
+        <div class="tool-card tool-card-coming reveal reveal-delay-2">
+          <div class="tool-card-tag">Tracker · Progress</div>
+          <div class="tool-card-title">Attendance Tracker</div>
+          <div class="tool-card-desc">Track student attendance across sessions, generate summary reports, and flag
+            patterns.</div>
+          <button class="tool-card-action" disabled style="opacity:0.4;cursor:default">
+            Coming soon
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+     <footer>
+    <div class="footer-inner">
+      <div class="footer-name">Shishir <span>Bhattarai</span></div>
+      <ul class="footer-links">
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/tools.html">Tools</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="/terms.html">Terms</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/sisironly" target="_blank" class="footer-social">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/onlysisir" target="_blank" class="footer-social">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://x.com/sisironly" target="_blank" class="footer-social">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+    <p class="footer-copy">© <span id="footer-year"></span> Shishir Bhattarai · Educator &amp; Developer · Butwal, Nepal</p>
+  </footer>
+  <a href="#" class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </a>
+  <!-- STUDENT FORM MODAL -->
+  <div class="modal-overlay" id="studentFormModal" onclick="handleModalClick(event)">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeStudentForm()" aria-label="Close">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-title">Student Information Form</div>
+      <div class="modal-subtitle">All fields are required. Fill in details and download as Word document.</div>
+      <div class="form-grid">
+        <div class="form-sec-label">Personal details</div>
+        <div class="form-field">
+          <label>Full name <span class="req">*</span></label>
+          <input type="text" id="sf-name" placeholder="e.g. Aarav Sharma" oninput="sfValidate('name')" onblur="sfValidate('name')">
+          <span class="errmsg" id="sf-name-err"></span>
+        </div>
+        <div class="form-field">
+          <label>Date of birth <span class="req">*</span></label>
+          <input type="date" id="sf-dob" oninput="sfValidate('dob')" onblur="sfValidate('dob')">
+          <span class="errmsg" id="sf-dob-err"></span>
+        </div>
+        <div class="form-field full">
+          <label>Address <span class="req">*</span></label>
+          <textarea id="sf-address" placeholder="House no., street, city, district, province..." oninput="sfValidate('address')" onblur="sfValidate('address')"></textarea>
+          <span class="errmsg" id="sf-address-err"></span>
+        </div>
+        <div class="form-sec-label">Interests &amp; aspirations</div>
+        <div class="form-field">
+          <label>Hobby <span class="req">*</span></label>
+          <input type="text" id="sf-hobby" placeholder="e.g. Reading, Cricket" oninput="sfValidate('hobby')" onblur="sfValidate('hobby')">
+          <span class="errmsg" id="sf-hobby-err"></span>
+        </div>
+        <div class="form-field">
+          <label>Aim / Career goal <span class="req">*</span></label>
+          <input type="text" id="sf-aim" placeholder="e.g. Doctor, Engineer" oninput="sfValidate('aim')" onblur="sfValidate('aim')">
+          <span class="errmsg" id="sf-aim-err"></span>
+        </div>
+        <div class="form-sec-label">Family background</div>
+        <div class="form-field">
+          <label>Father's occupation <span class="req">*</span></label>
+          <input type="text" id="sf-fatherOcc" placeholder="e.g. Farmer, Teacher" oninput="sfValidate('fatherOcc')" onblur="sfValidate('fatherOcc')">
+          <span class="errmsg" id="sf-fatherOcc-err"></span>
+        </div>
+        <div class="form-field">
+          <label>Mother's occupation <span class="req">*</span></label>
+          <input type="text" id="sf-motherOcc" placeholder="e.g. Homemaker, Nurse" oninput="sfValidate('motherOcc')" onblur="sfValidate('motherOcc')">
+          <span class="errmsg" id="sf-motherOcc-err"></span>
+        </div>
+      </div>
+      <div class="form-progress" id="sf-progress">0 / 7 fields complete</div>
+      <div class="form-actions">
+        <button class="btn-primary" onclick="sfDownload()">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download as Word
+        </button>
+        <button class="btn-outline" onclick="sfClear()">Clear</button>
+      </div>
+      <div class="form-status" id="sf-status-ok" style="display:none;background:#eef7ee;color:#2d6a2d;border:1px solid #a8d4a8">Word document downloaded successfully!</div>
+      <div class="form-status" id="sf-status-err" style="display:none;background:#fff0f0;color:#c0392b;border:1px solid #f5b9b9">Please fix all errors before downloading.</div>
+    </div>
+  </div>
+
+  <!-- docx library must load BEFORE script.js for sfDownload to work -->
+  <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
