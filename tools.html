@@ -68,43 +68,6 @@
           </button>
         </div>
 
-        <!-- TOOL 1: Student Info Form -->
-        <div class="tool-card reveal" onclick="openStudentForm()">
-          <div class="tool-card-tag">Form · Student Data</div>
-          <div class="tool-card-title">Student Information Form</div>
-          <div class="tool-card-desc">Collect student details including name, date of birth, address, hobbies,
-            aspirations, and family background. Download a formatted Word document instantly.</div>
-          <button class="tool-card-action">
-            Open form
-            <svg class="tool-card-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
-
-        <!-- PLACEHOLDER: Coming soon -->
-        <div class="tool-card tool-card-coming reveal reveal-delay-1">
-          <div class="tool-card-tag">Quiz · Assessment</div>
-          <div class="tool-card-title">Student Quiz Builder</div>
-          <div class="tool-card-desc">Create and share multiple-choice quizzes with your students. Auto-grade and export
-            results.</div>
-          <button class="tool-card-action" disabled style="opacity:0.4;cursor:default">
-            Coming soon
-          </button>
-        </div>
-
-        <!-- PLACEHOLDER: Coming soon -->
-        <div class="tool-card tool-card-coming reveal reveal-delay-2">
-          <div class="tool-card-tag">Tracker · Progress</div>
-          <div class="tool-card-title">Attendance Tracker</div>
-          <div class="tool-card-desc">Track student attendance across sessions, generate summary reports, and flag
-            patterns.</div>
-          <button class="tool-card-action" disabled style="opacity:0.4;cursor:default">
-            Coming soon
-          </button>
-        </div>
-
       </div>
     </div>
   </section>
@@ -139,72 +102,7 @@
   <a href="#" class="scroll-top" id="scrollTop" aria-label="Scroll to top">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
   </a>
-  <!-- STUDENT FORM MODAL -->
-  <div class="modal-overlay" id="studentFormModal" onclick="handleModalClick(event)">
-    <div class="modal-box">
-      <button class="modal-close" onclick="closeStudentForm()" aria-label="Close">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-        </svg>
-      </button>
-      <div class="modal-title">Student Information Form</div>
-      <div class="modal-subtitle">All fields are required. Fill in details and download as Word document.</div>
-      <div class="form-grid">
-        <div class="form-sec-label">Personal details</div>
-        <div class="form-field">
-          <label>Full name <span class="req">*</span></label>
-          <input type="text" id="sf-name" placeholder="e.g. Aarav Sharma" oninput="sfValidate('name')" onblur="sfValidate('name')">
-          <span class="errmsg" id="sf-name-err"></span>
-        </div>
-        <div class="form-field">
-          <label>Date of birth <span class="req">*</span></label>
-          <input type="date" id="sf-dob" oninput="sfValidate('dob')" onblur="sfValidate('dob')">
-          <span class="errmsg" id="sf-dob-err"></span>
-        </div>
-        <div class="form-field full">
-          <label>Address <span class="req">*</span></label>
-          <textarea id="sf-address" placeholder="House no., street, city, district, province..." oninput="sfValidate('address')" onblur="sfValidate('address')"></textarea>
-          <span class="errmsg" id="sf-address-err"></span>
-        </div>
-        <div class="form-sec-label">Interests &amp; aspirations</div>
-        <div class="form-field">
-          <label>Hobby <span class="req">*</span></label>
-          <input type="text" id="sf-hobby" placeholder="e.g. Reading, Cricket" oninput="sfValidate('hobby')" onblur="sfValidate('hobby')">
-          <span class="errmsg" id="sf-hobby-err"></span>
-        </div>
-        <div class="form-field">
-          <label>Aim / Career goal <span class="req">*</span></label>
-          <input type="text" id="sf-aim" placeholder="e.g. Doctor, Engineer" oninput="sfValidate('aim')" onblur="sfValidate('aim')">
-          <span class="errmsg" id="sf-aim-err"></span>
-        </div>
-        <div class="form-sec-label">Family background</div>
-        <div class="form-field">
-          <label>Father's occupation <span class="req">*</span></label>
-          <input type="text" id="sf-fatherOcc" placeholder="e.g. Farmer, Teacher" oninput="sfValidate('fatherOcc')" onblur="sfValidate('fatherOcc')">
-          <span class="errmsg" id="sf-fatherOcc-err"></span>
-        </div>
-        <div class="form-field">
-          <label>Mother's occupation <span class="req">*</span></label>
-          <input type="text" id="sf-motherOcc" placeholder="e.g. Homemaker, Nurse" oninput="sfValidate('motherOcc')" onblur="sfValidate('motherOcc')">
-          <span class="errmsg" id="sf-motherOcc-err"></span>
-        </div>
-      </div>
-      <div class="form-progress" id="sf-progress">0 / 7 fields complete</div>
-      <div class="form-actions">
-        <button class="btn-primary" onclick="sfDownload()">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-            <polyline points="7 10 12 15 17 10"/>
-            <line x1="12" y1="15" x2="12" y2="3"/>
-          </svg>
-          Download as Word
-        </button>
-        <button class="btn-outline" onclick="sfClear()">Clear</button>
-      </div>
-      <div class="form-status" id="sf-status-ok" style="display:none;background:#eef7ee;color:#2d6a2d;border:1px solid #a8d4a8">Word document downloaded successfully!</div>
-      <div class="form-status" id="sf-status-err" style="display:none;background:#fff0f0;color:#c0392b;border:1px solid #f5b9b9">Please fix all errors before downloading.</div>
-    </div>
-  </div>
+
 
   <!-- docx library must load BEFORE script.js for sfDownload to work -->
   <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
